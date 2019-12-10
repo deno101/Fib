@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/olympic">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:paddingTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@id/fib_number"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fib no: "
+            android:theme="@style/small_txt"
+            />
+
+        <TextView
+            android:id="@+id/fib_count"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/small_txt"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:paddingTop="24dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/fib_number"
+        android:text="0"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:theme="@style/big_text_white"/>
+
+    <Button
+        android:id="@+id/btn_find_nxt"
+        android:layout_below="@id/fib_number"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"/>
+
+</RelativeLayout>
